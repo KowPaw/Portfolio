@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
+body {
+  background: url("../images/picture.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.show {
+  display: block; }
+
+.navbar-header a {
+  padding: 5px;
+  margin: 0 15px;
+  width: 50px; }
+  .navbar-header a img {
+    height: 100%;
+    margin-left: 10px; }
+
+.navbar-right button {
+  margin-right: 10px;
+  margin-left: 10px;
+  background: url("../images/UK.png");
+  background-size: cover;
+  background-position: center;
+  width: 25px;
+  height: 20px; }
+
+#about {
+  margin: 0; }
+
+.jumbotron {
+  background: url("../images/jumbo.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: 100vh; }
+  .jumbotron .container-fluid {
+    color: white; }
+    .jumbotron .container-fluid h1 {
+      margin-top: 150px; }
+    .jumbotron .container-fluid a {
+      margin-top: 100px;
+      margin-bottom: 50px; }
+    .jumbotron .container-fluid .row p {
+      font-size: 18px;
+      display: none; }
+
+.cv > p {
+  padding: 50px 0;
+  background: #6b6a6a; }
+.cv .container {
+  display: none;
+  background: #bdc3c7;
+  padding-top: 10px; }
+  .cv .container #school .media ~ .media {
+    display: none; }
+  .cv .container .media {
+    padding-top: 10px;
+    margin-top: 0; }
+  .cv .container #school img {
+    margin-bottom: 10px; }
+  .cv .container #language .media:nth-of-type(2) ~ .media {
+    display: none; }
+  .cv .container #language img {
+    margin-top: 20px;
+    border: 1px solid black; }
+  .cv .container #language #eng {
+    width: 70%; }
+  .cv .container #language #spa {
+    width: 40%; }
+  .cv .container #language #rus {
+    width: 35%; }
+  .cv .container #language #ger {
+    width: 20%; }
+  .cv .container #language #jap {
+    width: 15%; }
+  .cv .container #language .media-body {
+    padding-top: 20px; }
+    .cv .container #language .media-body .progress-bar {
+      background: #5cb85c; }
+
+#portfolio {
+  margin: 50px auto;
+  background: #9d9c9c;
+  color: white; }
+  #portfolio h2 {
+    margin: 50px 0 20px;
+    color: #2e6da4; }
+  #portfolio p {
+    color: #2e6da4; }
+  #portfolio .thumbnail {
+    background-size: cover;
+    border: 0;
+    padding: 0;
+    margin-bottom: 10px; }
+    #portfolio .thumbnail:hover .layer {
+      background: rgba(0, 0, 0, 0.5);
+      visibility: visible; }
+    #portfolio .thumbnail .layer {
+      line-height: 360px;
+      visibility: hidden; }
+      #portfolio .thumbnail .layer i {
+        margin: 0 30px;
+        color: white;
+        font-size: 25px;
+        cursor: pointer; }
+  #portfolio .proj-1 {
+    background-image: url(../images/p1.jpg); }
+  #portfolio .proj-3 {
+    background-image: url(../images/p3.jpg); }
+  #portfolio .proj-4 {
+    background-image: url(../images/p4.jpg); }
+  #portfolio .proj-7 {
+    background-image: url(../images/p7.jpg); }
+  #portfolio .proj-8 {
+    background-image: url(../images/p8.jpg); }
+  #portfolio .proj-9 {
+    background-image: url(../images/p9.jpg); }
+
+#technology {
+  margin-bottom: 30px;
+  background: #6b6a6a;
+  color: white; }
+  #technology h3 {
+    margin: 50px 0; }
+  #technology .row {
+    margin-bottom: 70px; }
+    #technology .row a {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto; }
+    #technology .row div:hover p {
+      visibility: visible; }
+    #technology .row div p {
+      color: #5bc0de;
+      visibility: hidden; }
+
+footer .container-fluid {
+  background: #333;
+  color: white; }
+  footer .container-fluid .row {
+    padding: 10px 0; }
+    footer .container-fluid .row tr td:nth-of-type(2) {
+      padding-left: 15px; }
+    footer .container-fluid .row .btn {
+      margin: 10px;
+      padding: 2px 4px; }
+
+@media (max-width: 768px) {
+  .jumbotron {
+    min-height: 500px; }
+
+  .cv #school img {
+    margin-top: 30px;
+    width: 100px; }
+
+  #portfolio .thumbnail .layer {
+    visibility: visible;
+    background: rgba(0, 0, 0, 0.5); }
+
+  #technology .row > div {
+    height: 120px; }
+  #technology .row div p {
+    visibility: visible; }
+
+  footer .row > div:first-of-type {
+    margin-bottom: 15px; }
+  footer div.text-center {
+    text-align: left; } }
+@media (max-width: 375px) {
+  .cv #school img {
+    display: none; }
+  .cv #work img {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */

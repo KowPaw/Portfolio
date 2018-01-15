@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
+body {
+	background: url("../images/picture.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.show {
+	display: block;
+}
+
+.navbar-header a {
+	padding: 5px;
+	margin: 0 15px;
+	width: 50px;
+	img {
+		height: 100%;
+		margin-left: 10px;
+	}
+}
+.navbar-right button {
+	margin-right: 10px;
+	margin-left: 10px;
+	background: url("../images/UK.png");
+	background-size: cover;
+	background-position: center;
+	width: 25px;
+	height: 20px;
+}
+
+#about {
+	margin: 0;
+}
+.jumbotron {
+	background: url("../images/jumbo.jpg");
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	height: 100vh;
+	.container-fluid {
+		color: white;
+		h1 {
+			margin-top: 150px;
+		}
+		a {
+			margin-top: 100px;
+			margin-bottom: 50px;
+		}
+		.row p {
+			font-size: 18px;
+			display: none;
+		}
+	}
+}
+
+.cv {
+	> p {
+		padding: 50px 0;
+		background: #6b6a6a;
+	}
+	.container {
+		display: none;
+		background: rgb(189, 195, 199);
+		padding-top: 10px;
+		#school .media ~ .media {
+			display: none;
+		}
+		.media {
+			padding-top: 10px;
+			margin-top: 0;
+		}
+		#school img {
+			margin-bottom: 10px;
+		}
+		#language {
+			.media:nth-of-type(2) ~ .media {
+				display: none;
+			}
+			img {
+				margin-top: 20px;
+				border: 1px solid black;
+			}
+			#eng {width: 70%;}
+			#spa {width: 40%;}
+			#rus {width: 35%;}
+			#ger {width: 20%;}
+			#jap {width: 15%;}
+			.media-body {
+				padding-top: 20px;
+				.progress-bar {
+					background: #5cb85c;
+				}
+			}
+		}
+	}
+}
+
+#portfolio {
+	margin: 50px auto;
+	background: #9d9c9c;
+	color: white;
+	h2 {
+		margin: 50px 0 20px;
+		color: #2e6da4;
+	}
+	p {
+		color: #2e6da4;;
+	}
+	.thumbnail {
+		background-size: cover;
+		border: 0;
+		padding: 0;
+		margin-bottom: 10px; 
+		&:hover .layer {
+				background: rgba(0, 0, 0, 0.5);
+				visibility: visible;
+		}
+		.layer {
+			line-height: 360px;
+			visibility: hidden;
+			i {
+				margin: 0 30px;
+				color: white;
+				font-size: 25px;
+				cursor: pointer;
+			}
+		}
+	}
+	.proj-1 {background-image: url(../images/p1.jpg);}
+	.proj-3 {background-image: url(../images/p3.jpg);}
+	.proj-4 {background-image: url(../images/p4.jpg);}
+	.proj-7 {background-image: url(../images/p7.jpg);}
+	.proj-8 {background-image: url(../images/p8.jpg);}
+	.proj-9 {background-image: url(../images/p9.jpg);}
+}
+
+#technology {
+	margin-bottom: 30px;
+	background: #6b6a6a;
+	color: white;
+ 	h3 {
+		margin: 50px 0;
+	}
+	.row {
+		margin-bottom: 70px;
+		a {
+			width: 70px;
+			height: 70px;
+			margin: 0 auto;
+		}
+		div:hover p {
+			visibility: visible;
+		}
+		div p {
+			color: #5bc0de;
+			visibility: hidden;
+		}
+	}
+}
+
+footer .container-fluid {
+	background: #333;
+	color: white;
+	.row {
+		padding: 10px 0;
+		tr td:nth-of-type(2) {
+			padding-left: 15px;
+		}
+		.btn {
+			margin: 10px;
+			padding: 2px 4px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.jumbotron {
+		min-height: 500px;
+	}
+	
+	.cv #school img {
+		margin-top: 30px;
+		width: 100px;
+	}
+
+	#portfolio .thumbnail .layer {
+		visibility: visible;
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	#technology .row {
+		> div {
+			height: 120px;
+		}
+		div p {
+			visibility: visible;
+		}
+	}
+	
+	footer {
+		.row > div:first-of-type {
+			margin-bottom: 15px;
+		}
+		div.text-center {
+			text-align: left;
+		}
+	}
+}
+
+@media (max-width: 375px) {
+	.cv {
+		#school img {
+			display: none;
+		}
+		#work img {
+			display: none;
+		}
+	}
+}
