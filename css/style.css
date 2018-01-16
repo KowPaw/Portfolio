@@ -16,14 +16,18 @@ body {
     height: 100%;
     margin-left: 10px; }
 
-.navbar-right button {
+.navbar-right div {
   margin-right: 10px;
   margin-left: 10px;
-  background: url("../images/UK.png");
+  padding: 0;
   background-size: cover;
   background-position: center;
-  width: 25px;
-  height: 20px; }
+  width: 32px;
+  height: 22px; }
+.navbar-right .pol {
+  background: url("../images/UK.png"); }
+.navbar-right .eng {
+  background: url("../images/Poland.jpg"); }
 
 #about {
   margin: 0; }

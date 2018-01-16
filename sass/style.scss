@@ -20,14 +20,22 @@ body {
 		margin-left: 10px;
 	}
 }
-.navbar-right button {
-	margin-right: 10px;
-	margin-left: 10px;
-	background: url("../images/UK.png");
-	background-size: cover;
-	background-position: center;
-	width: 25px;
-	height: 20px;
+.navbar-right {
+	div {
+		margin-right: 10px;
+		margin-left: 10px;
+		padding: 0;
+		background-size: cover;
+		background-position: center;
+		width: 32px;
+		height: 22px;
+	}
+	.pol {
+		background: url("../images/UK.png");
+	}
+	.eng {
+		background: url("../images/Poland.jpg");
+	}
 }
 
 #about {
