@@ -110,6 +110,8 @@ body {
         cursor: pointer; }
   #portfolio .proj-1 {
     background-image: url(../images/p1.jpg); }
+  #portfolio .proj-2 {
+    background-image: url(../images/p2.jpg); }
   #portfolio .proj-3 {
     background-image: url(../images/p3.jpg); }
   #portfolio .proj-4 {
